@@ -1,0 +1,148 @@
+body{
+   background: url(../img/326.jpg) no-repeat center center/cover;
+   font-family: 'Bebas Neue', cursive;
+   color: #fff;
+   margin: 0px;
+   padding: 0px;
+}
+.container{
+    height: 100vh;
+}
+.message{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: -1em;
+}
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    margin-top: -9rem;
+}
+.images img{
+    height: 50vh;
+    width: 50vh;
+}
+.computer{
+    margin-right: 7rem;
+}
+.shakeComputer{
+    animation: shakeComputer 0.8s linear;
+}
+.player{
+    margin-left: 7rem;
+}
+.shakePlayer{
+    animation: shakePlayer 0.8s linear;
+}
+.points{
+    margin-top: -2em;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.computerPoints{
+    margin-left: 3rem;
+}
+.playerPoints{
+    margin-right: 3rem;
+}
+.options{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.options button{
+    color: #fff;
+    background-color: #003865;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 1em 2em;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+}
+.options button:hover{
+    background-color: hsl(207, 86%, 39%);
+    transform: scale(1.05);
+    transition: 0.4s;
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    color: #003865;
+}
+
+@media (max-width: 600px){
+    .message{
+        font-size: 1rem;
+        margin-top: 
+        -1rem;
+    }
+    .images img{
+        height: 20vh;
+        width: 20vh;
+        margin-top: 3em;
+    }
+    .computer{
+        margin-right: 2rem;
+    }
+    .player{
+        margin-left: 2rem;
+    }
+    .computerPoints{
+        margin-left: 2rem;
+    }
+    .playerPoints{
+        margin-right: 2rem;
+    }
+    .points{
+        margin-top: -1.2em;
+    }
+    .options{
+        flex-direction: column;
+    }
+    .options button{
+        padding: 10px 10px;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 2rem;
+        margin: 10px;
+    }
+}
+
+@keyframes shakeComputer {
+    0%{
+        transform: rotate(-20deg);
+    }
+    25%{
+        transform: rotate(20deg);
+    }
+    50%{
+        transform: rotate(-20deg);
+    }
+    75%{
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes shakePlayer {
+    0%{
+        transform: rotate(20deg);
+    }
+    25%{
+        transform: rotate(-20deg);
+    }
+    50%{
+        transform: rotate(20deg);
+    }
+    75%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
